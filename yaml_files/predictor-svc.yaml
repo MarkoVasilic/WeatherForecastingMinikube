@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: predictor
+spec:
+  type: LoadBalancer
+  selector:
+    app: predictor
+  ports:
+    - name: http
+      port: 8006
+      targetPort: 8006
+      protocol: TCP
