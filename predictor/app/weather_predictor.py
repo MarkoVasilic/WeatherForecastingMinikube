@@ -133,7 +133,7 @@ class WeatherPredictor:
         logger.info(f"Data prepared with shape: {normalized_features.shape}")
         return normalized_features[::6]
 
-    def train(self, dataframe: pd.DataFrame, epochs: int = 15, batch_size: int = 64) -> None:
+    def train(self, dataframe: pd.DataFrame, epochs: int = 30, batch_size: int = 64) -> None:
         """
         Trains the LSTM model on the given dataframe.
         
